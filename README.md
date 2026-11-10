@@ -1,4 +1,4 @@
-# Previsão do comportamento elétrico de uma residência por meio de séries temporais e aprendizado de máquina
+# Previsão do comportamento elétrico de uma residência por meio de séries temporais e machine learning
 
 Repositório desenvolvido como parte do Trabalho de Conclusão de Curso do Bacharelado em Ciência de Dados da Universidade Virtual do Estado de São Paulo (UNIVESP).
 
@@ -15,14 +15,24 @@ Foi utilizada a base pública **Individual Household Electric Power Consumption*
 - período entre dezembro de 2006 e novembro de 2010
 - variável-alvo: `Global_active_power`
 - agregação final em frequência horária
+- arquivo utilizado: `household_power_consumption.txt`
 
-Fonte da base:
+### Fonte oficial
 
-Hebrail, G.; Berard, A. Individual Household Electric Power Consumption.  
+Hebrail, G.; Berard, A. *Individual Household Electric Power Consumption*.  
 UCI Machine Learning Repository, 2006.  
-DOI: 10.24432/C58K54
+DOI: 10.24432/C58K54  
+https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption
 
-> O arquivo original da base de dados não é armazenado neste repositório.
+### Cópia do arquivo utilizado no experimento
+
+Para facilitar a reprodução do estudo, uma cópia do arquivo utilizado no experimento foi disponibilizada no Google Drive:
+
+https://drive.google.com/file/d/1qH76iQXczTHyT7uHaxgxFt_clc-MiyDU/view?usp=drive_link
+
+> O Google Drive funciona apenas como uma cópia de conveniência. A fonte oficial da base permanece sendo o UCI Machine Learning Repository. Caso o link do Google Drive não esteja acessível, utilize a fonte oficial acima.
+
+> O arquivo original da base de dados não é armazenado neste repositório devido ao seu tamanho.
 
 ## Metodologia
 
@@ -68,10 +78,21 @@ O experimento completo está disponível em:
 - PySpark
 - pandas 2.3.3
 - NumPy 2.3.4
+- SciPy 1.16.3
 - Matplotlib 3.10.6
 - scikit-learn 1.7.2
 - statsmodels 0.15.0
 - Databricks
+
+## Reproduzibilidade
+
+As instruções detalhadas para preparação do ambiente, disponibilização da base e execução do experimento estão em:
+
+[REPRODUCAO.md](REPRODUCAO.md)
+
+As versões das principais dependências Python estão registradas em:
+
+[requirements.txt](requirements.txt)
 
 ## Finalidade
 
