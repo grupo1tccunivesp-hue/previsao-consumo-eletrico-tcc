@@ -8,7 +8,8 @@ Foi utilizada a base pública:
 
 **Individual Household Electric Power Consumption**
 
-Disponibilizada pelo UCI Machine Learning Repository.
+Fonte oficial: UCI Machine Learning Repository  
+https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption
 
 DOI: 10.24432/C58K54
 
@@ -16,7 +17,13 @@ O arquivo utilizado no experimento é:
 
 `household_power_consumption.txt`
 
-O arquivo original não está armazenado neste repositório devido ao seu tamanho.
+Para facilitar a reprodução, uma cópia do arquivo utilizado no experimento foi disponibilizada no Google Drive:
+
+https://drive.google.com/file/d/1qH76iQXczTHyT7uHaxgxFt_clc-MiyDU/view?usp=drive_link
+
+> O Google Drive é uma cópia de conveniência. A fonte oficial da base permanece sendo o UCI Machine Learning Repository. Caso o link do Google Drive não esteja acessível, obtenha o arquivo pela fonte oficial.
+
+O arquivo possui aproximadamente 126,8 MB e não está armazenado neste repositório devido ao seu tamanho.
 
 ## 2. Preparar o ambiente
 
@@ -24,8 +31,10 @@ O experimento foi desenvolvido no Databricks utilizando:
 
 - Python 3.12.3
 - Apache Spark 4.2.0
+- PySpark
 - pandas 2.3.3
 - NumPy 2.3.4
+- SciPy 1.16.3
 - Matplotlib 3.10.6
 - scikit-learn 1.7.2
 - statsmodels 0.15.0
@@ -33,6 +42,8 @@ O experimento foi desenvolvido no Databricks utilizando:
 As principais dependências Python estão registradas no arquivo:
 
 `requirements.txt`
+
+Observação: Apache Spark e PySpark foram fornecidos pelo ambiente Databricks utilizado no experimento e, por isso, não constam no `requirements.txt`.
 
 ## 3. Disponibilizar a base no Databricks
 
